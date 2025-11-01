@@ -7,6 +7,11 @@ $database = getenv("DB_NAME");     // ex: scada_db
 $username = getenv("DB_USER");     // ex: dbadmin
 $password = getenv("DB_PASS");     // ex: superSecret!
 
+// Using ODBC connection
+$connectionString = "odbc:Driver={ODBC Driver 18 for SQL Server};Server=$serverName;Database=$databaseName;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;";
+$pdo = new PDO($connectionString, $username, $password);
+?>
+
 // Read JSON body
 $raw = file_get_contents("php://input");
 $data = json_decode($raw, true);
