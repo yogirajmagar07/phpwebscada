@@ -1,7 +1,5 @@
 {
   "require": {
-    "php": "^8.1",
-    "ext-pdo_sqlsrv": "*",
-    "ext-sqlsrv": "*"
+    "php": "^8.1"
   }
 }
