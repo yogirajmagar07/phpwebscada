@@ -1,0 +1,70 @@
+CREATE TABLE massflowmeter_data (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    deviceid VARCHAR(50),
+    timestamp DATETIME,
+
+    FT1MassFlow DECIMAL(18,4),
+    FT1Masstotal DECIMAL(18,4),
+    FT1VolumeFlow DECIMAL(18,4),
+    FT1Volumetotal DECIMAL(18,4),
+    FT1Temp DECIMAL(18,4),
+    FT1Density DECIMAL(18,4),
+
+    FT2MassFlow DECIMAL(18,4),
+    FT2Masstotal DECIMAL(18,4),
+    FT2VolumeFlow DECIMAL(18,4),
+    FT2Volumetotal DECIMAL(18,4),
+    FT2Temp DECIMAL(18,4),
+    FT2Density DECIMAL(18,4),
+
+    FT3MassFlow DECIMAL(18,4),
+    FT3Masstotal DECIMAL(18,4),
+    FT3VolumeFlow DECIMAL(18,4),
+    FT3Volumetotal DECIMAL(18,4),
+    FT3Temp DECIMAL(18,4),
+    FT3Density DECIMAL(18,4),
+
+    FT4MassFlow DECIMAL(18,4),
+    FT4Masstotal DECIMAL(18,4),
+    FT4VolumeFlow DECIMAL(18,4),
+    FT4Volumetotal DECIMAL(18,4),
+    FT4Temp DECIMAL(18,4),
+    FT4Density DECIMAL(18,4),
+
+    FT5MassFlow DECIMAL(18,4),
+    FT5Masstotal DECIMAL(18,4),
+    FT5VolumeFlow DECIMAL(18,4),
+    FT5Volumetotal DECIMAL(18,4),
+    FT5Temp DECIMAL(18,4),
+    FT5Density DECIMAL(18,4),
+
+    FT6MassFlow DECIMAL(18,4),
+    FT6Masstotal DECIMAL(18,4),
+    FT6VolumeFlow DECIMAL(18,4),
+    FT6Volumetotal DECIMAL(18,4),
+    FT6Temp DECIMAL(18,4),
+    FT6Density DECIMAL(18,4),
+
+    FT7MassFlow DECIMAL(18,4),
+    FT7Masstotal DECIMAL(18,4),
+    FT7VolumeFlow DECIMAL(18,4),
+    FT7Volumetotal DECIMAL(18,4),
+    FT7Temp DECIMAL(18,4),
+    FT7Density DECIMAL(18,4),
+
+    FT8MassFlow DECIMAL(18,4),
+    FT8Masstotal DECIMAL(18,4),
+    FT8VolumeFlow DECIMAL(18,4),
+    FT8Volumetotal DECIMAL(18,4),
+    FT8Temp DECIMAL(18,4),
+    FT8Density DECIMAL(18,4),
+
+    FT9MassFlow DECIMAL(18,4),
+    FT9Masstotal DECIMAL(18,4),
+    FT9VolumeFlow DECIMAL(18,4),
+    FT9Volumetotal DECIMAL(18,4),
+    FT9Temp DECIMAL(18,4),
+    FT9Density DECIMAL(18,4),
+
+    created_at DATETIME DEFAULT GETDATE()
+);
